@@ -1,0 +1,188 @@
+
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 2rem auto; /* Centra el contenido en la pantalla */
+    padding: 0 1rem;
+    display: grid;
+    /* Divide en dos columnas: Izquierda ocupa 2 partes, derecha ocupa 1 parte */
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem; /* Espacio entre columnas */
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarjeta h2, .tarjeta h3 {
+    color: var(--negro);
+    margin-bottom: 1rem;
+}
+
+/* Estilo del "Avatar" */
+.avatarPerfil {
+    display: block; /* Para que tome ancho y alto */
+    width: 60px;
+    height: 60px;
+    background-color: #0b6e6e;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px; /* Centra el texto verticalmente */
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Estilos de las listas de las tarjetas */
+.tarjeta ul {
+    list-style-type: none;
+}
+
+.tarjeta li {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* TABLA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f5f7f4;
+}
+
+/* NUEVO LISTAS */
+
+.lista-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-tarjetas li {
+  margin-bottom: 0;
+  padding: 4px 12px;
+  background: var(--mutedado);
+  color: var(--acento-suave);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* DATOS DE CUENTA */
+
+.lista-datos {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.lista-datos dt {
+  font-weight: bold;
+}
+
+.lista-datos dd {
+  margin: 0;
+}
+
+/* ESTADISTICAS */
+
+.estadisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.estadisticas h4 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 12px;
+  background: var(--superficie-alt);
+  border-radius: 8px;
+}
+
+.estadisticas dt {
+  color: var(--mutedado);
+}
+
+.estadisticas dd {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+
+/* PUBLICACION DEL PERFIL */
+
+.mini-posts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+}
+
+.mini-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-posts li {
+    display: grid;
+    gap: 10px;
+    padding: 1px 0;
+    border-bottom: 1px solid var(--linea);
+  
+}
+
+.mini-posts .mini-titulo {
+  font-weight: bold;
+}
+
+.mini-posts .info-publicacion {
+  font-size: 0.85rem;
+  color: var(--mutedado);
+}
+
+.mini-posts li:last-child {
+    border-bottom: none; 
+}
+
+
+/* BOTON DE EDITAR  */
+.boton-editar {
+    display: block;
+    background-color: var(--acento-oscuro);
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.boton-editar:hover {
+    background-color: var(--negro);
+}

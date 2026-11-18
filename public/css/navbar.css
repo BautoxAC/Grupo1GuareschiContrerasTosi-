@@ -1,0 +1,158 @@
+
+/* ---------- Encabezado / navbar ---------- */
+.sitio-header {
+  background: var(--header-fondo);
+  color: #ffffff;
+}
+
+.header-dentro {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-dentro  span{
+     font-family: Georgia, "Times New Roman", serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.logo-icono {
+   width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--calido);
+  color: var(--header-fondo);
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.main-nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.busqueda {
+  flex: 1;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.busqueda input {
+  width: 100%;
+  padding: 9px 18px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: #1d4747;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.busqueda input::placeholder {
+  color: #b9d0cd;
+}
+
+.busqueda input:focus {
+  background: #ffffff;
+  color: var(--negro);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.boton-create {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--calido);
+  color: var(--negro);
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icono-boton {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.icono-boton img {
+  width: 45%;
+  height: 45%;
+}
+
+.icono-boton:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.icono-boton svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.avatar-lnegro {
+  display: inline-flex;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* ---------- Avatares ---------- */
+.avatar {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--av, var(--acento));
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.av-1 { --av: #0b6e6e; }

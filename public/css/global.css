@@ -1,0 +1,55 @@
+/* CSS para agrupar todos los estilos que comparten la mayoria de los CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: #1a1a1b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+span{
+    font-family: Arial, sans-serif;
+}
+/* Investigue como poner modo oscuro sin javascript y esto detecta la configuracion de windows (se me quemaban los ojos) */
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1b;
+        color: #d7dadc;
+    }
+
+    .tarjeta {
+        background-color: #272729;
+    }
+
+    th,
+    .post, 
+    .tarjeta-lateral, 
+    .post-detalle, 
+    .seccion-comentarios {
+        background-color: #343536;
+    }
+
+    .seccion-comentarios h3 {
+        color: #dae0e6;
+    }
+
+} */

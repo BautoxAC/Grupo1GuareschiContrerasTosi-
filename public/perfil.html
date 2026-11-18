@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de @Dev - Roddit</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/footer.css">
+   
+</head>
+
+<body data-pagina="perfil">
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="sitio-header" id="header-contenedor"></header>
+
+    <!-- CONTENIDO CENTRAL DIVIDIDO EN DOS COLUMNAS -->
+
+    <main>
+
+        <!-- COLUMNA IZQUIERDA: DATOS DEL PERFIL -->
+        <section id="perfil-principal">
+
+            <!-- Tarjeta de Presentacion -->
+            <article class="tarjeta" id="perfil-presentacion"></article>
+
+            <!-- Estadisticas -->
+
+            <article class="tarjeta">
+                <h3>Mis estadisticas</h3>
+                <dl class="estadisticas" id="perfil-estadisticas"></dl>
+            </article>
+
+            <!-- Datos de la cuenta -->
+
+            <article class="tarjeta">
+                <h2>Datos de la cuenta</h2>
+                <dl class="lista-datos" id="perfil-cuenta"></dl>
+            </article>
+
+
+            <!-- Actividad por comunidad -->
+            <article class="tarjeta">
+                <h3>Actividad por comunidad</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comunidad</th>
+                            <th>Publicaciones</th>
+                            <th>Comentarios</th>
+                            <th>Karma</th>
+                        </tr>
+                    </thead>
+                    <tbody id="perfil-actividad"></tbody>
+                </table>
+            </article>
+
+            <!-- Publicaciones recientes -->
+
+            <article class="tarjeta">
+                <h2>Publicaciones Recientes</h2>
+
+
+                <ul class="mini-posts" id="perfil-publicaciones"></ul>
+
+
+            </article>
+
+        </section>
+
+        <!-- COLUMNA DERECHA: BARRA LATERAL -->
+        <aside>
+            <section class="tarjeta">
+                <h3>Mis Logros</h3>
+                <ul class="lista-tarjetas" id="perfil-logros"></ul>
+            </section>
+
+            <section class="tarjeta">
+                <h3>Mis Comunidades</h3>
+                <ul class="lista-tarjetas" id="perfil-comunidades"></ul>
+            </section>
+
+            <a href="#" class="boton-editar">Editar perfil</a>
+        </aside>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="sitio-footer" id="footer-contenedor"></footer>
+
+    <script src="js/componentes.js"></script>
+    <script src="js/utilidades.js"></script>
+    <script src="js/usuarios.js"></script>
+    <script src="js/renderizarPerfil.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

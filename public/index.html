@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Roddit: comunidades donde se conversa de programación, fotografía, cocina, juegos y cine. Mirá las publicaciones más destacadas.">
+  <title>Roddit - Inicio</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body data-pagina="inicio">
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="sitio-header" id="header-contenedor"></header>
+
+  <!-- Parte de adentro -->
+
+  <main>
+
+    <section class="feed-publicaciones"></section>
+
+    
+    
+    <!-- Barra lateral -->
+
+    <aside>
+
+      <section class="tarjeta-lateral">
+
+        <h3>Reglas de Roddit</h3>
+
+        <ol>
+          <li>Tratarse bien</li>
+          <li>Ser feliz</li>
+          <li>No spam</li>
+        </ol>
+
+      </section>
+
+    </aside>
+
+    <!-- Boton cargar mas -->
+
+    <div class="contenedor-cargar-mas">
+      <button id="boton-cargar-mas" type="button">
+        Cargar más publicaciones
+      </button>
+
+      <p id="mensaje-carga" aria-live="polite"></p>
+    </div>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+
+  <footer class="sitio-footer" id="footer-contenedor"></footer>
+
+  <script src="js/componentes.js"></script>
+  <script src="js/utilidades.js"></script>
+  <script src="js/renderizarPublicaciones.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

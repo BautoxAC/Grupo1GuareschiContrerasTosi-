@@ -1,0 +1,192 @@
+/* El Main usa Grid para hacer 2 columnas (2fr para el feed, 1fr para el aside) */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Agrupa las publicaciones dejando un espacio entre ellas */
+.feed-publicaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* TARJETA LATERAL y LOS POSTS */
+
+.publicacion-usuario{
+    display: flex; 
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.tarjeta-lateral {
+    background-color: var(--superficie);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50rem;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-areas: "votos header" "votos contenido" "votos footer";
+    gap: 0.5rem 1rem;
+    background-color: var(--superficie);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-left: 6px solid green;
+    
+}
+
+.post-titulo,
+.post-contenido p {
+
+    overflow-wrap: anywhere;
+    word-break: break-all;
+
+}
+
+.post-votos {
+    grid-area: votos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 0.5rem 0;
+    border-radius: 6px;
+    height: 80px;
+}
+
+.post-votos button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #787c7e;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.post-votos button:hover {
+    background-color: #e2e7ec;
+    color: var(--calido);
+}
+
+.votos-cantidad {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 4px 0;
+}
+
+.post-header {
+    grid-area: header;
+}
+
+.post-data {
+    font-size: 0.85rem;
+    color: #787c7e;
+    margin: 0 0 0.3rem 0;
+    overflow-wrap: break-word;
+}
+
+.post-data a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-data a:hover {
+    text-decoration: underline;
+}
+
+.post-titulo {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.post-titulo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-titulo a:hover {
+    text-decoration: underline;
+}
+
+.post-contenido {
+    grid-area: contenido;
+    overflow-wrap: break-word;
+}
+
+.post-contenido p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.post-footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.post-footer button,
+.boton-comentarios {
+    background-color: #e2e7ec;
+    color: #1a1a1b;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 89px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post-footer button:hover,
+.boton-comentarios:hover {
+    background-color: #d3d6da;
+}
+
+/* Estilos de la barra lateral */
+
+.tarjeta-lateral {
+
+    width: 20rem;
+
+}
+
+.tarjeta-lateral h3 {
+    color: var(--acento-oscuro);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.tarjeta-lateral ol {
+    margin-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.contenedor-cargar-mas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#boton-cargar-mas {
+    background-color: var(--superficie);
+    color: #1a1a1b;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 89px;
+}
