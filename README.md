@@ -22,7 +22,7 @@ Necesitás tener instalado:
 ### Paso 1: clonar el repositorio
 
 ```bash
-git clone https://github.com/BautoxAC/Roddit.git
+git clone https://github.com/BautoxAC/Grupo1GuareschiContrerasTosi-
 cd Roddit
 ```
 
